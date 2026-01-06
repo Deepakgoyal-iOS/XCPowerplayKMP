@@ -1,0 +1,8 @@
+framework module "XCPowerplayKMP" {
+    umbrella header "XCPowerplayKMP.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
