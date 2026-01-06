@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "XCPowerplayKMP",
-            path: "shared/build/XCFrameworks/release/XCPowerplayKMP.xcframework"
+            path: "XCPowerplayKMP.xcframework"
         )
     ]
 )
