@@ -10,6 +10,12 @@ let package = Package(
     platforms: [
         .iOS(.v14),
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/yourusername/SimpleUtilities",
+            from: "1.0.0"
+        )
+    ],
     products: [
         .library(name: "XCPowerplayKMP", targets: ["XCPowerplayKMP"])
     ],
@@ -17,12 +23,6 @@ let package = Package(
         .binaryTarget(
             name: "XCPowerplayKMP",
             path: "XCPowerplayKMP.xcframework"
-        )
-    ],
-    dependencies: [
-        .package(
-            url: "https://github.com/yourusername/SimpleUtilities",
-            from: "1.0.0"
         )
     ]
 )
