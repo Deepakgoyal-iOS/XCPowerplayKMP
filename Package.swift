@@ -18,5 +18,11 @@ let package = Package(
             name: "XCPowerplayKMP",
             path: "XCPowerplayKMP.xcframework"
         )
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/yourusername/SimpleUtilities",
+            from: "1.0.0"
+        )
     ]
 )
