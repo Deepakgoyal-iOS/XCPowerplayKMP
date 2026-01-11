@@ -13,7 +13,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/Deepakgoyal-iOS/powerplay_kmp",
-            from: "1.0.0"
+            from: "1.0.1"
         )
     ],
     products: [
