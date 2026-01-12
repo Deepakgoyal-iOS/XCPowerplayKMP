@@ -10,12 +10,6 @@ let package = Package(
     platforms: [
         .iOS(.v14),
     ],
-    dependencies: [
-        .package(
-            url: "https://github.com/Deepakgoyal-iOS/powerplay_kmp",
-            from: "1.0.1"
-        )
-    ],
     products: [
         .library(name: "XCPowerplayKMP", targets: ["XCPowerplayKMP"])
     ],
