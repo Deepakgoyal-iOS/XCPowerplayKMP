@@ -1,0 +1,760 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name XCPowerplayKMP
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+@_exported import XCPowerplayKMP
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = XCPowerplayKMP.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = XCPowerplayKMP.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = XCPowerplayKMP.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = XCPowerplayKMP.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = XCPowerplayKMP.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = XCPowerplayKMP.Skie_SuspendResult
+      public enum Success {
+        public typealias __Kotlin = XCPowerplayKMP.Skie_SuspendResult.Success
+      }
+      public enum Error {
+        public typealias __Kotlin = XCPowerplayKMP.Skie_SuspendResult.Error
+      }
+      public enum Canceled {
+        public typealias __Kotlin = XCPowerplayKMP.Skie_SuspendResult.Canceled
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = XCPowerplayKMP.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = XCPowerplayKMP.Kotlinx_coroutines_coreFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = XCPowerplayKMP.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = XCPowerplayKMP.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = XCPowerplayKMP.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = XCPowerplayKMP.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = XCPowerplayKMP.Kotlinx_coroutines_coreRunnable
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = XCPowerplayKMP.Skie.KotlinxCoroutinesCore
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = XCPowerplayKMP.Skie.KotlinxSerializationCore
+}
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func next() async -> T?
+  @objc deinit
+  public typealias Element = T
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : XCPowerplayKMP.Kotlinx_coroutines_coreFlow
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinOptionalFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T?] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: XCPowerplayKMP.SkieSwiftStateFlow<XCPowerplayKMP.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: XCPowerplayKMP.SkieSwiftStateFlow<XCPowerplayKMP.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinStateFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T? {
+    get
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+    set(value)
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  final public var subscriptionCount: XCPowerplayKMP.SkieSwiftStateFlow<XCPowerplayKMP.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : XCPowerplayKMP.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T? {
+    get
+    set(value)
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var subscriptionCount: XCPowerplayKMP.SkieSwiftStateFlow<XCPowerplayKMP.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = XCPowerplayKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any XCPowerplayKMP.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+extension XCPowerplayKMP.PlatformKt {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public static func getAPIData() async throws -> [XCPowerplayKMP.NetworkProject]
+}
+public func __getAPIData(completionHandler: @escaping ([XCPowerplayKMP.NetworkProject]?, (any Swift.Error)?) -> Swift.Void)
+@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+public func getAPIData() async throws -> [XCPowerplayKMP.NetworkProject]
+public func getStaticData() -> Swift.String
+extension XCPowerplayKMP.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: XCPowerplayKMP.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: XCPowerplayKMP.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: XCPowerplayKMP.SkieColdFlowIterator<E>) -> XCPowerplayKMP.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension XCPowerplayKMP.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> XCPowerplayKMP.KotlinBoolean
+}
+extension XCPowerplayKMP.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any XCPowerplayKMP.Kotlinx_coroutines_coreFlowCollector) async throws
+}
+extension XCPowerplayKMP.Kotlinx_coroutines_coreFlowCollector {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+}
+extension XCPowerplayKMP.SharedViewModel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAPIData() async throws -> [XCPowerplayKMP.NetworkProject]
+}
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>) -> XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: XCPowerplayKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension XCPowerplayKMP.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(XCPowerplayKMP.Skie_SuspendResult.Canceled)
+    case error(XCPowerplayKMP.Skie_SuspendResult.Error)
+    case success(XCPowerplayKMP.Skie_SuspendResult.Success)
+    public static func == (a: XCPowerplayKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: XCPowerplayKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> XCPowerplayKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : XCPowerplayKMP.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> XCPowerplayKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : XCPowerplayKMP.Skie_SuspendResult
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(XCPowerplayKMP.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(XCPowerplayKMP.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(XCPowerplayKMP.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(XCPowerplayKMP.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: XCPowerplayKMP.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: XCPowerplayKMP.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : XCPowerplayKMP.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : XCPowerplayKMP.Kotlinx_serialization_coreSerialKind
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : XCPowerplayKMP.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : XCPowerplayKMP.Kotlinx_serialization_coreSerializersModule
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(XCPowerplayKMP.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(XCPowerplayKMP.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: XCPowerplayKMP.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: XCPowerplayKMP.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : XCPowerplayKMP.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : XCPowerplayKMP.Kotlinx_serialization_corePolymorphicKind
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: XCPowerplayKMP.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: XCPowerplayKMP.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : XCPowerplayKMP.Kotlinx_serialization_corePrimitiveKind
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(XCPowerplayKMP.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(XCPowerplayKMP.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(XCPowerplayKMP.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(XCPowerplayKMP.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: XCPowerplayKMP.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: XCPowerplayKMP.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : XCPowerplayKMP.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> XCPowerplayKMP.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : XCPowerplayKMP.Kotlinx_serialization_coreStructureKind
+public func getPlatform() -> any XCPowerplayKMP.Platform
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension XCPowerplayKMP.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
